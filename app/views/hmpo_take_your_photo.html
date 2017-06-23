@@ -8,20 +8,13 @@
 
 
 
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="lte-ie8" lang=""><![endif]-->
 <!--[if gt IE 8]><!--><html lang=""><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
     <title>    Upload your photo &ndash; Photo &ndash; GOV.UK
+</title>
 
     <!--[if gt IE 8]><!--><link href="/public/govuk-assets/stylesheets/govuk-template.css?0.17.3" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
     <!--[if IE 6]><link href="/public/govuk-assets/stylesheets/govuk-template-ie6.css?0.17.3" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
@@ -77,7 +70,23 @@
     </div>
 
     
-   
+    <header role="banner" id="global-header" class="with-proposition">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="https://www.gov.uk" title="Go to the GOV.UK homepage" id="logo" class="content">
+              <img src="/public/govuk-assets/images/gov.uk_logotype_crown_invert_trans.png?0.17.3" width="35" height="31" alt=""> GOV.UK
+            </a>
+          </div>
+        </div>
+    <div class="header-proposition">
+        <div class="content">
+            <nav id="proposition-menu">
+                <a href="https://www.gov.uk/apply-renew-passport" title="Renew your passport home" id="proposition-name">Renew your passport</a>
+            </nav>
+        </div>
+    </div>      </div>
+    </header>
     
 
 
@@ -91,40 +100,64 @@
             </p>
         </div>
                 <div id="back">
-            <a href="/photo/digital-photo" class="back-link">Back</a>
+            <a href="/photo/photo-guide-take-photo" class="back-link">Back</a>
 </div>
                 <div class="grid-row">
-                <div class="column-two-thirds">
+                    <div id="progress-container" class="progress-container" role="region" aria-live="assertive" tabindex="-1">
+            <p id="progress" class="progress hide" role="progressbar">Uploading image</p>
+        </div>
+    <div class="column-two-thirds">
                 <header>
-        <h1>Choose your photo method</h1>    </header>
-    <form action="/photo/need-photo" method="POST"  autocomplete="off" novalidate="true" spellcheck="false">
-            <div id="get-photo-group" class="form-group">
-                <fieldset role="radiogroup" aria-required="true">
-                    <legend>
-                        <span class="form-label">How would you like to take your photo?</span>
-                        
-                    </legend>
-                    <label class="block-label" for="get-photo-take-myself">
-                        <input type="radio" name="get-photo" id="get-photo-take-myself" value="take-myself" aria-required="true">
-                        Show me how to do it myself
-                    </label>
-                    <label class="block-label" for="get-photo-photo-shop">
-                        <input type="radio" name="get-photo" id="get-photo-photo-shop" value="photo-shop" aria-required="true">
-                        Show me how to get it from a shop
-                    </label>
-                    <p class="form-block">or</p>
-                    <label class="block-label" for="get-photo-true">
-                        <input type="radio" name="get-photo" id="get-photo-true" value="true" aria-required="true">
-                        I already have a digital photo
-                    </label>
-                </fieldset>
+        <h1>Take your photo</h1>    </header>
+    
+    <form action="/photo/upload" method="POST" enctype="multipart/form-data" autocomplete="off" novalidate="true" spellcheck="false">
+            <p>Your photo must meet the rules for digital passport photos.<br><a href="/photo/photo-guide"> Read the photo guide</a>.</p>
+
+            <div class="panel panel-border-wide">
+                <p>We’ll store all photos for up to 30 days in line with our <a href="/help/privacy" class="new-window" target="_blank">privacy policy<span class="visuallyhidden">(Opens in a new window)</span></a>.</p>
             </div>
-<div class="form-group">
-    <input type="submit"  value="Continue" class="button">
+
+            <div id="photo-group" class="form-group">
+                <label for="photo">
+                    <span id="photo-label-text" class="visually-hidden">Upload your photo</span>
+                </label>
+                <input type="file" accept="image/jpeg" id="photo" class="photo-choose-file" name="photo" aria-controls="progress-container" aria-required="true">
+            </div>
+            <div id="photo-submit">
+                <div class="form-group">
+    <input type="submit"  value="Upload your photo" class="button">
 </div>
-<input type="hidden" name="x-csrf-token" value="JAIMSrn6-k3ioV2XE4cZvauBi1W1jUJnNSPk" />
+
+            </div>
+
+            <details>
+                <summary><span class="summary js-gaevent" data-galabel="details" data-gakey="printed photo">I have a printed photo</span></summary>
+                <div class="panel panel-border-narrow">
+                    <p>You can’t use a printed photo with this service. You’ll need to <a href="./need-photo">get a digital photo</a>, or <a href="https://passportapplication.service.gov.uk/ips-olc/" class="js-gaevent" data-galabel="different service" data-gakey="printed photo">use a different service</a> to renew your passport.</p>
+                </div>
+            </details>
+
+            <h2>How to take a good passport photo</h2>
+
+            <div class="grid-row photo-upload-guide">
+                <div class="column-half img">
+                    <img src="/public/images/good-passport-photo.jpg" alt="">
+                </div>
+                <div class="column-half">
+                    <ul class="list list-number">
+                        <li>Get a friend to take your photo</li>
+                        <li>Use a plain background</li>
+                        <li>Don’t crop your photo &ndash; include your face, shoulders and upper body</li>
+                        <li>Keep your hair away from your face and brushed down</li>
+                        <li>Make sure there are no shadows on your face or behind you</li>
+                    </ul>
+                </div>
+            </div>
+<input type="hidden" name="x-csrf-token" value="FL1yeIdc-JOBHoCOHSE77ydXyhLzeLeNecos" />
 </form>
-</div>
+
+        <script src="/photo/public/javascripts/keepalive.js"></script>
+    </div>
             </div>
     </main>
 
@@ -169,11 +202,12 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('set', 'anonymizeIp', true);
     ga('create', 'UA-50679428-3', 'auto');
-    ga('send', 'pageview', '/photo/need-photo');
+    ga('send', 'pageview', '/photo/upload');
 </script>
     <script src="/photo/public/javascripts/app.js"></script>
   </body>
 </html>
+
 
 
 
