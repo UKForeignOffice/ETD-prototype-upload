@@ -1,0 +1,49 @@
+{{< layout}}
+{{$propositionHeader}}Renew {{/propositionHeader}}
+
+{{$pageTitle}}Give a countersignature{{/pageTitle}}
+
+
+{{$header}}
+    <h1>Sign in</h1>
+{{/header}}
+
+{{$content}}
+{{< hmpo-partials-form}}
+    {{$form}}
+
+  <p>You should have a reference number from the person applying for a passport. If you don't, you need to ask them for it.</p>
+    <div id="reference-number-group" class="form-group">
+        <fieldset>
+          <div id="reference-group" class="form-group">
+              <label for="reference" class="form-label-bold">
+                  Applicantion reference number
+                  <span class="form-hint">For example, PEX 123 456 7890</span>
+              </label>
+              <span id="reference-prefix" class="prefix">PEX</span>
+              <span>
+                  <input type="text" id="reference" class="form-control reference" name="reference" value="" maxlength="16" aria-describedby="reference-prefix" aria-required="true">
+              </span>
+          </div>
+          <div id="phoneno-group" class="form-group">
+              <label for="phoneno" class="form-label-bold">
+                  Your phone number
+                  <span class="form-hint">We'll only use this to contact you if there's a problem.</span>
+              </label>
+              <span>
+                  <input type="text" id="phoneno" class="form-control phoneno" name="phoneno" value="" maxlength="16" aria-describedby="phoneno-prefix" aria-required="true">
+              </span>
+          </div>
+        </fieldset>
+          {{#input-submit}}{{/input-submit}}
+      </div>
+
+
+    {{/form}}
+{{/ hmpo-partials-form}}
+
+
+
+{{/content}}
+
+{{/ layout}}
