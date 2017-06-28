@@ -1,10 +1,13 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  ETD photo guide 7 - Check the lighting
+  ETD photo guide 3 - Get someone to help you
 {% endblock %}
 
 {% block content %}
+
+
+
 
 
 <!DOCTYPE html>
@@ -12,7 +15,7 @@
 <!--[if gt IE 8]><!--><html lang=""><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>    Check the lighting &ndash; Photo &ndash; GOV.UK
+    <title>    Get someone to help you &ndash; Photo &ndash; GOV.UK
 </title>
 
     <!--[if gt IE 8]><!--><link href="/public/govuk-assets/stylesheets/govuk-template.css?0.17.3" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
@@ -84,52 +87,42 @@
         </div>
                 <div class="photo-guide">
          <a href="21uploadphoto2" class="back-link">Back to photo upload</a>
-            <span class="marker">Guide part 7 of 13</span>
+            <span class="marker">Guide part 3 of 13</span>
         </div>
                 <div class="grid-row">
                 <div class="photo-guide">
             <div class="column-full">
     <div class="flash-card">
         <header>
-    <h1>Check the lighting</h1>
+    <h1>Get someone to help you</h1>
         </header>
-    <div class="text">
-        <p>There shouldn’t be any shadows on your face or behind your head.</p>
-        <p>Make sure:</p>
-        <ul class="list list-bullet">
-            <li>you use natural light (eg a large window facing you)</li>
-            <li>the lighting is even &ndash; don’t stand too close to a lamp that’s switched on</li>
-        </ul>
+    <div class="grid-row">
+        <div class="column-half">
+            <p>Find someone who can take your photo.</p>
+        </div>
+        <div class="column-half">
+            <object data="/photo/public/images/diagram-get-help-do-this.svg" type="image/svg+xml" class="svg" tabindex="-1">
+                <img src="https://www.passport.service.gov.uk/photo/public/images/diagram-get-help-do-this-x2.png" alt="Get someone to help - do this" width="456" height="222">
+            </object>
+        </div>
     </div>
-    <div class="guidance-photos" aria-hidden="true">
-        <ul>
-            <li>
-                <img src="https://www.passport.service.gov.uk/photo/public/images/image-m1-plain.jpg" alt="">
-                <div class="result">
-                    <p class="approved">Approved</p>
-                </div>
-            </li>
-            <li>
-                <img src="https://www.passport.service.gov.uk/photo/public/images/image-m1-uneven-harsh.jpg" alt="">
-                <div class="result">
-                    <p class="failed">Uneven lighting</p>
-                </div>
-            </li>
-            <li>
-                <img src="https://www.passport.service.gov.uk/photo/public/images/image-m1-flash-shadow.jpg" alt="">
-                <div class="result">
-                    <p class="failed">Avoid shadows</p>
-                </div>
-            </li>
-        </ul>
+    <div class="grid-row">
+        <div class="column-half">
+            <p>You can’t take a ‘selfie’ or use a webcam.</p>
+        </div>
+        <div class="column-half">
+            <object data="/photo/public/images/diagram-get-help-not-this.svg" type="image/svg+xml" class="svg" tabindex="-1">
+                <img src="https://www.passport.service.gov.uk/photo/public/images/diagram-get-help-not-this-x2.png" alt="Get someone to help - don’t do this" width="389" height="135">
+            </object>
+        </div>
     </div>
                 <nav class="guide-nav">
                     <ul>
                         <li class="button-guide button-guide-previous">
-                            <a href="/etd_6space">Previous</a>
+                            <a href="/etd_2findacamera">Previous</a>
                         </li>
                         <li class="button-guide button-guide-next">
-                            <a href="/etd_8headwear">Next</a>
+                            <a href="etd_4plainbackground">Next</a>
                         </li>
                     </ul>
                 </nav>
@@ -139,7 +132,35 @@
                     </div>
     </main>
 
-   
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+    <ul>
+        <li><a href="/help/cookies" target="_blank">Cookies <span class="visuallyhidden">(Opens in a new window)</span></a></li>
+        <li><a href="/help/feedback" target="_blank">Feedback <span class="visuallyhidden">(Opens in a new window)</span></a></li>
+        <li><a href="/help" target="_blank">Help <span class="visuallyhidden">(Opens in a new window)</span></a></li>
+        <li><a href="/help/privacy" target="_blank">Privacy <span class="visuallyhidden">(Opens in a new window)</span></a></li>
+        <li><a href="/help/terms-and-conditions" target="_blank">Terms and conditions <span class="visuallyhidden">(Opens in a new window)</span></a></li>
+        <li>Built by HM Passport Office</li>
+    </ul>
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+              
+                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+              
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <div id="global-app-error" class="app-error hidden"></div>
 
     <script src="/public/govuk-assets/javascripts/govuk-template.js?0.17.3"></script>
@@ -152,11 +173,12 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('set', 'anonymizeIp', true);
     ga('create', 'UA-50679428-3', 'auto');
-    ga('send', 'pageview', '/photo/photo-guide-lighting');
+    ga('send', 'pageview', '/photo/photo-guide-get-help');
 </script>
     <script src="/photo/public/javascripts/app.js"></script>
   </body>
 </html>
+
 
 
 {% endblock %}
