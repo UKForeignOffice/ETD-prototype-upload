@@ -39,14 +39,10 @@
         <td>
             <h3>Your details</h3>
           Your details have been entered successfully.<br>
-        Thank you<br>
+        Thank you. <a href="#">copy of your details</a>
         </td>
           <br/>
-        <td>
-          <a href="#">
-            Copy of details <span class="visuallyhidden">Exporter name</span>
-          </a>
-        </td>
+        
       </tr>
      
         
@@ -89,12 +85,58 @@
         <td>
             <h3>Other documents</h3>
          If you have a police report for a stolen passport, please <a href="#">upload a copy</a> now.(a photo of it is fine if you can read the reference number). If you live outside the UK and want to use the emergency travel document to return home, please <a href="#">upload a copy</a> of a bill or bank statement to show proof of your address. <br>
+            <br/>
+        
+            <h4 class="heading-small">Do you need to upload other documents?</h4>
+            
+            
+              <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">police report</legend>
+
+            <label for="radio-yes" class="block-label" data-target="yes">
+              <input id="radio-yes" type="radio" name="report" value="yes">
+             
+              Yes
+            </label>
+
+            <label for="radio-no" class="block-label" data-target="No">
+              <input id="radio-no" type="radio" name="report" value="no">
+            
+             No
+            </label>
+              
+              
+              
+              
+              
+              
+            </fieldset>
+           
+        
+            <div class="panel panel-border-narrow js-hidden" id="no">
+              <label class="form-label" for="no">
+                  
+                  <div class="form-group">
+    <a href="21uploadphoto2" class="button">Upload documents  ></a>
+  </div>
+                  
+             >
+            </label>
+            </div>
+
+            <div class="panel panel-border-narrow js-hidden" id="yes">
+              <label class="form-label" for="yes">
+
+              
+ <div class="form-group">
+    <a href="uploaddocuments" class="button">Upload documents  ></a>
+  </div>
+      
+
             <br>
-        </td>
-         
-        <td class="change-answer">
-         
-        </td>
+     
       </tr>
         
         
@@ -111,7 +153,6 @@
          You need to book a courier to deliver your emergency travel document to your specified address - it will have to be signed for.<br>
             <br>
              <div class="form-group">
-    <a href="21uploadphoto2" class="button">Book a courier  ></a>
   </div>
         </td>
          
