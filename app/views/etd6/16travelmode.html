@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Travel details - when
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+      <h1 class="heading-large">
+        What mode of transport will you use?
+      </h1>
+
+      <p>Your exact journey will be printed in your emergency travel document </p>
+
+    
+                
+
+       
+      
+        <div class="form-group">
+          <fieldset>
+ <p>Select all that apply:</p>
+            <legend class="visuallyhidden">#</legend>
+
+            <label for="lost" class="block-label">
+              <input type="checkbox" name="lost" value="lost" id="lost">
+              Plane
+            </label>
+
+            <label for="stolen" class="block-label">
+              <input type="checkbox" name="stolen" value="stolen" id="stolen">
+              Train
+            </label>
+
+            <label for="expired" class="block-label">
+              <input type="checkbox" name="expired" value="expired" id="expired">
+              Boat
+            </label>
+            
+            <label for="full" class="block-label">
+              <input type="checkbox" name="full" value="full" id="full">
+              Car
+            </label>
+
+
+            <label for="damaged" class="block-label">
+              <input type="checkbox" name="damaged" value="damaged" id="damaged">
+              Coach
+            </label>
+
+
+
+            <label for="other" class="block-label">
+              <input type="checkbox" name="other" value="other" id="other">
+              Other
+            </label>
+
+            
+     </div>
+
+
+      </form>
+
+<div>
+          <p>
+        <a class="button button-start" href="17travelwherenow" role="button">next</a>
+      </p>
+</main>
+
+{% endblock %}
