@@ -1,10 +1,12 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  ETD photo guide 10 - Make sure your eyes are visible
+  Plain expression and visible eyes
 {% endblock %}
 
 {% block content %}
+
+
 
 
 
@@ -13,7 +15,7 @@
 <!--[if gt IE 8]><!--><html lang=""><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>    Make sure your eyes are visible &ndash; Photo &ndash; GOV.UK
+    <title>    Face the camera with a plain expression &ndash; Photo &ndash; GOV.UK
 </title>
 
     <!--[if gt IE 8]><!--><link href="/public/govuk-assets/stylesheets/govuk-template.css?0.17.3" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
@@ -71,7 +73,6 @@
 
     
    
-    
 
 
     <div id="global-header-bar"></div>
@@ -84,60 +85,83 @@
             </p>
         </div>
                 <div class="photo-guide">
-           <a href="21uploadphoto2" class="back-link">Back to photo upload</a>
-            <span class="marker">Guide part 10 of 13</span>
+            <a href="tasklist9" class="back-link">Back to task list</a>
+            <span class="marker">Guide part 7 of 7</span>
         </div>
                 <div class="grid-row">
                 <div class="photo-guide">
             <div class="column-full">
     <div class="flash-card">
         <header>
-    <h1>Make sure your eyes are visible</h1>
+    <h1>Get ready for your photo</h1>
         </header>
     <div class="text">
-        <p>It’s better to remove your glasses if you can &ndash; reflections make it hard to see your eyes.</p>
-        <p>If you need to wear them make sure they’re not tinted and there’s no glare on the lens.</p>
-        <p>Your photo will be rejected if your eyes can’t be seen clearly.</p>
+        <h2>Keep a plain expression</h2>
+                                <p>Don’t smile or frown. Keep your eyes open and your mouth closed.</p>
     </div>
     <div class="guidance-photos" aria-hidden="true">
         <ul>
-            <div>
-                <li>
-                    <img src="https://www.passport.service.gov.uk/photo/public/images/image-m2-plain.jpg" alt="">
-                    <div class="result">
-                        <p class="approved">Approved</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="https://www.passport.service.gov.uk/photo/public/images/image-m2-plain-glasses.jpg" alt="">
-                    <div class="result">
-                        <p class="approved">Approved</p>
-                    </div>
-                </li>
-            </div>
-            <div>
-                <li>
-                    <img src="https://www.passport.service.gov.uk/photo/public/images/image-m2-glasses-reflection.jpg" alt="">
-                    <div class="result">
-                        <p class="failed">No glare on glasses</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="https://www.passport.service.gov.uk/photo/public/images/image-m2-glasses-tinted-covering-eyes.jpg" alt="">
-                    <div class="result">
-                        <p class="failed">Eyes not clear.<br>No tinted lenses</p>
-                    </div>
-                </li>
-            </div>
+            <li>
+                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-f1-plain.jpg" alt="">
+                <div class="result">
+                    <p class="approved">Approved</p>
+                </div>
+            </li>
+            <li>
+                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-f1-smiling.jpg" alt="">
+                <div class="result">
+                    <p class="failed">Don’t smile</p>
+                </div>
+            </li>
+            <li>
+                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-f1-mouth-open.jpg" alt="">
+                <div class="result">
+                    <p class="failed">Keep your mouth closed</p>
+                </div>
+            </li>
         </ul>
     </div>
+         <h2>Take glasses off</h2>
+                                <p>If you have to keep glasses on, your eyes must be fully visible.<br>Make sure there is no glare.</p>
+                                <div class="guidance-photos" aria-hidden="true">
+                                    <ul>
+                                        <div>
+                                            <li>
+                                                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-m2-plain.jpg" alt="">
+                                                <div class="result" style="height: 57px;">
+                                                    <p class="approved">Approved - glasses off</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide//uncropped-photos/image-m2-plain-glasses.jpg" alt="">
+                                                <div class="result" style="height: 57px;">
+                                                    <p class="approved">Approved - eyes fully visible</p>
+                                                </div>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li>
+                                                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-m2-glasses-tinted-covering-eyes.jpg" alt="">
+                                                <div class="result" style="height: 57px;">
+                                                    <p class="failed">Don't cover eyes with glasses</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-m2-glasses-reflection.jpg" alt="">
+                                                <div class="result" style="height: 57px;">
+                                                    <p class="failed">No glare on glasses</p>
+                                                </div>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
                 <nav class="guide-nav">
                     <ul>
                         <li class="button-guide button-guide-previous">
-                            <a href="/etd_9face">Previous</a>
+                            <a href="6photo-face-clear">Previous</a>
                         </li>
                         <li class="button-guide button-guide-next">
-                            <a href="etd_11plain">Next</a>
+                            <a href="8photo-upload">Next</a>
                         </li>
                     </ul>
                 </nav>
@@ -161,7 +185,7 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('set', 'anonymizeIp', true);
     ga('create', 'UA-50679428-3', 'auto');
-    ga('send', 'pageview', '/photo/photo-guide-glasses');
+    ga('send', 'pageview', '/photo/photo-guide-expression');
 </script>
     <script src="/photo/public/javascripts/app.js"></script>
   </body>

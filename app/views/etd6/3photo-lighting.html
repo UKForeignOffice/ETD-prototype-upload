@@ -1,12 +1,10 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  ETD photo guide 4 - Find a plain background
+  ETD photo guide 7 - Check the lighting
 {% endblock %}
 
 {% block content %}
-
-
 
 
 <!DOCTYPE html>
@@ -14,7 +12,7 @@
 <!--[if gt IE 8]><!--><html lang=""><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>    Find a plain background &ndash; Photo &ndash; GOV.UK
+    <title>Get the lighting right &ndash; Photo &ndash; GOV.UK
 </title>
 
     <!--[if gt IE 8]><!--><link href="/public/govuk-assets/stylesheets/govuk-template.css?0.17.3" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
@@ -85,39 +83,39 @@
             </p>
         </div>
                 <div class="photo-guide">
-            <a href="21uploadphoto2" class="back-link">Back to photo upload</a>
-            <span class="marker">Guide part 4 of 13</span>
+         <a href="tasklist9" class="back-link">Back to task list</a>
+            <span class="marker">Guide part 3 of 7</span>
         </div>
                 <div class="grid-row">
                 <div class="photo-guide">
             <div class="column-full">
     <div class="flash-card">
         <header>
-    <h1>Find a plain background</h1>
+    <h1>Get the lighting right</h1>
         </header>
     <div class="text">
-        <p>You need to stand in front of a completely plain background. It should be a light grey or cream colour.</p>
-        <p>Don’t stand in front of a tiled or patterned wall.</p>
-        <p>Make sure there aren’t any objects in view, like a light switch or plant.</p>
+        <p>It's best to use natural daylight, for example facing a window.</p>
+                                   <p>If it isn't daylight, use a ceiling light or a lamp. You need to stand in the light but not directly under it.</p>
+        <p>Make sure there are no shadows on your face or behind you.</p>
     </div>
     <div class="guidance-photos" aria-hidden="true">
         <ul>
             <li>
-                <img src="https://www.passport.service.gov.uk/photo/public/images/image-m2-plain.jpg" alt="">
+                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-m1-plain.jpg" alt="">
                 <div class="result">
                     <p class="approved">Approved</p>
                 </div>
             </li>
             <li>
-                <img src="https://www.passport.service.gov.uk/photo/public/images/image-m2-textured-background.jpg" alt="">
+                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-m1-uneven-harsh.jpg" alt="">
                 <div class="result">
-                    <p class="failed">Textured background</p>
+                    <p class="failed">Shadow on face</p>
                 </div>
             </li>
             <li>
-                <img src="https://www.passport.service.gov.uk/photo/public/images/image-m2-object-in-background.jpg" alt="">
+                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-m1-flash-shadow.jpg" alt="">
                 <div class="result">
-                    <p class="failed">Object in background</p>
+                    <p class="failed">Shadow behind head</p>
                 </div>
             </li>
         </ul>
@@ -125,10 +123,10 @@
                 <nav class="guide-nav">
                     <ul>
                         <li class="button-guide button-guide-previous">
-                            <a href="/etd_3gethelp">Previous</a>
+                            <a href="2photo-plainbackground">Previous</a>
                         </li>
                         <li class="button-guide button-guide-next">
-                            <a href="etd_5position">Next</a>
+                            <a href="4photo-position">Next</a>
                         </li>
                     </ul>
                 </nav>
@@ -138,35 +136,7 @@
                     </div>
     </main>
 
-    <footer class="group js-footer" id="footer" role="contentinfo">
-
-      <div class="footer-wrapper">
-
-        <div class="footer-meta">
-          <div class="footer-meta-inner">
-    <ul>
-        <li><a href="/help/cookies" target="_blank">Cookies <span class="visuallyhidden">(Opens in a new window)</span></a></li>
-        <li><a href="/help/feedback" target="_blank">Feedback <span class="visuallyhidden">(Opens in a new window)</span></a></li>
-        <li><a href="/help" target="_blank">Help <span class="visuallyhidden">(Opens in a new window)</span></a></li>
-        <li><a href="/help/privacy" target="_blank">Privacy <span class="visuallyhidden">(Opens in a new window)</span></a></li>
-        <li><a href="/help/terms-and-conditions" target="_blank">Terms and conditions <span class="visuallyhidden">(Opens in a new window)</span></a></li>
-        <li>Built by HM Passport Office</li>
-    </ul>
-            <div class="open-government-licence">
-              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
-              
-                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
-              
-            </div>
-          </div>
-
-          <div class="copyright">
-            <a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
+   
     <div id="global-app-error" class="app-error hidden"></div>
 
     <script src="/public/govuk-assets/javascripts/govuk-template.js?0.17.3"></script>
@@ -179,11 +149,12 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('set', 'anonymizeIp', true);
     ga('create', 'UA-50679428-3', 'auto');
-    ga('send', 'pageview', '/photo/photo-guide-background');
+    ga('send', 'pageview', '/photo/photo-guide-lighting');
 </script>
     <script src="/photo/public/javascripts/app.js"></script>
   </body>
 </html>
+
 
 {% endblock %}
 

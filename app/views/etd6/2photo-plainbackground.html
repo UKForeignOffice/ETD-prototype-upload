@@ -1,18 +1,10 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
- ETD photo guide 1 - how to take digital photo
+  ETD photo guide 4 - Find a plain background
 {% endblock %}
 
 {% block content %}
-
-
-
-
-
-
-
-
 
 
 
@@ -22,7 +14,7 @@
 <!--[if gt IE 8]><!--><html lang=""><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>    How to take your own emergency travel document photo &ndash; Photo &ndash; GOV.UK
+    <title>    Find a plain background &ndash; Photo &ndash; GOV.UK
 </title>
 
     <!--[if gt IE 8]><!--><link href="/public/govuk-assets/stylesheets/govuk-template.css?0.17.3" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
@@ -79,6 +71,7 @@
     </div>
 
     
+   
     
 
 
@@ -92,27 +85,50 @@
             </p>
         </div>
                 <div class="photo-guide">
-                    <a href="tasklist7" class="back-link">Back to task list</a>
-            <span class="marker">Guide part 1 of 13</span>
+            <a href="tasklist9" class="back-link">Back to task list</a>
+            <span class="marker">Guide part 2 of 7</span>
         </div>
                 <div class="grid-row">
                 <div class="photo-guide">
             <div class="column-full">
     <div class="flash-card">
-        
-        
-        
         <header>
-    <h1>How to take your own digital passport photo</h1>
+    <h1>Find a plain background</h1>
         </header>
     <div class="text">
-        <p>This guide will show you how to take a digital photo that meets the emergency travel document photo rules.</p>
-        <p>Your application will be delayed if your photo doesn’t meet the rules.</p>
+        <p><h2>You need a background without any texture or patterns.</h2>
+                                 </p>
+                                 <p>A light grey or cream wall works best. Check there are no objects behind you.</p>
+    </div>
+    <div class="guidance-photos" aria-hidden="true">
+        <ul>
+            <li>
+                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-m2-plain.jpg" alt="">
+                <div class="result">
+                    <p class="approved">Approved</p>
+                </div>
+            </li>
+            <li>
+                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-m2-textured-background.jpg" alt="">
+                <div class="result">
+                    <p class="failed">Textured background</p>
+                </div>
+            </li>
+            <li>
+                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-m2-object-in-background.jpg" alt="">
+                <div class="result">
+                    <p class="failed">Object in background</p>
+                </div>
+            </li>
+        </ul>
     </div>
                 <nav class="guide-nav">
                     <ul>
+                        <li class="button-guide button-guide-previous">
+                            <a href="1photo-findacamera">Previous</a>
+                        </li>
                         <li class="button-guide button-guide-next">
-                            <a href="etd_2findacamera">Next</a>
+                            <a href="3photo-lighting">Next</a>
                         </li>
                     </ul>
                 </nav>
@@ -122,8 +138,25 @@
                     </div>
     </main>
 
-    
+   
 
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="/public/govuk-assets/javascripts/govuk-template.js?0.17.3"></script>
+
+    <script src="/public/javascripts/app.js"></script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('set', 'anonymizeIp', true);
+    ga('create', 'UA-50679428-3', 'auto');
+    ga('send', 'pageview', '/photo/photo-guide-background');
+</script>
+    <script src="/photo/public/javascripts/app.js"></script>
+  </body>
+</html>
 
 {% endblock %}
 
