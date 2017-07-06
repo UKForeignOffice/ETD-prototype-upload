@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    
+<br>
+    
+<form>
+    
+  <form action="/docs/tutorials-and-examples" method="post" class="form">
+    
+         <h1 class="form-title heading-large">
+      Your contact details
+    </h1>
+
+      <br>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label class="form-label-bold" for="ni-number">
+       Email
+        <span class="form-hint">
+         We'll use this to send a confirmation to and may use it to contact you.
+          <br>
+        </span>
+      </label>
+      <input type="text" class="form-control" id="ni-number">
+    </div>
+        
+      <div class="form-group">
+      
+          <br>
+       
+    </div>
+        <!-- Phone -->
+    <div class="form-group">
+      <label class="form-label-bold" for="ni-number">
+      Best phone number to contact you now
+        <span class="form-hint">
+        Such as your mobile or a hotel
+          <br>
+        </span>
+      </label>
+      <input type="text" class="form-control" id="ni-number">
+    </div>
+        
+ <div class="form-group">
+      
+          <br>
+       
+    </div>
+          <p>
+        <a class="button button-start" href="8address" role="button">next</a>
+      </p>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
