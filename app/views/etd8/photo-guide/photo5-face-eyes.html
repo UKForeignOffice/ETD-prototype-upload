@@ -1,12 +1,10 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  ETD photo guide 5 - Stand in the right position
+  ETD photo guide - face and eyes
 {% endblock %}
 
 {% block content %}
-
-
 
 
 
@@ -16,7 +14,7 @@
 <!--[if gt IE 8]><!--><html lang=""><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>    Stand in the right position &ndash; Photo &ndash; GOV.UK
+    <title>    Keep your face and eyes clear &ndash; Photo &ndash; GOV.UK
 </title>
 
     <!--[if gt IE 8]><!--><link href="/public/govuk-assets/stylesheets/govuk-template.css?0.17.3" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
@@ -74,8 +72,6 @@
 
     
    
-
-
     <div id="global-header-bar"></div>
 
     <main id="content" class="main-content" role="main">
@@ -86,35 +82,83 @@
             </p>
         </div>
                 <div class="photo-guide">
-           <a href="tasklist9" class="back-link">Back to task list</a>
-            <span class="marker">Guide part 4 of 7</span>
+             <a href="tasklist9" class="back-link">Back to task list</a>
+            <span class="marker">Guide part 5 of 5</span>
         </div>
                 <div class="grid-row">
                 <div class="photo-guide">
             <div class="column-full">
     <div class="flash-card">
         <header>
-    <h1>Stand in the right position</h1>
+    <h1>Keep your face and eyes clear</h1>
         </header>
-    <div class="grid-row">
-        <div class="column-half">
-         <p>To avoid shadows, stand 50 centimetres away from your plain background. The person taking your photo needs to stand 1.5 metres away from you.</p>
-        </div>
+    <div class="text">
+        <p>Your hair must be away from your face.</p>    
+        
+        <p>Don’t smile or frown. Keep your eyes open and your mouth closed.</p>
+        
+        <p>If you wear headwear for religious or medical reasons, you can keep it on.</p>
     </div>
-    <div class="grid-row">
-        <div class="column-two-thirds distance-diagram">
-            <object data="/photo/public/images/diagram-distance.svg" type="image/svg+xml" class="svg" tabindex="-1">
-                <img src="https://www.passport.service.gov.uk/photo/public/images/diagram-distance-x2.png" width="550" height="212" alt="">
-            </object>
-        </div>
+    <div class="guidance-photos" aria-hidden="true">
+        <ul>
+            <li>
+                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-f2-religious-head-covering.jpg" alt="">
+                <div class="result">
+                    <p class="approved">Approved</p>
+                </div>
+            </li>
+            
+            <li>
+                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-f1-hair-accessory.jpg" alt="">
+                <div class="result">
+                    <p class="failed">No hair accessories</p>
+                </div>
+                 <li>
+                                              <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-f1-hair-over-eye.jpg" alt="">
+                                              <div class="result" style="height: 57px;">
+                                                  <p class="failed">Hair on face</p>
+                                              </div>
+            </li>
+        </ul>
     </div>
+        
+         <h2>Take glasses off</h2>
+                                <p>If you have to keep glasses on, your eyes must be fully visible.<br>Make sure there is no glare.</p>
+                                <div class="guidance-photos" aria-hidden="true">
+                                    <ul>
+                                        <div>
+                                            <li>
+                                                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-m2-plain.jpg" alt="">
+                                                <div class="result" style="height: 57px;">
+                                                    <p class="approved">Approved - glasses off</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide//uncropped-photos/image-m2-plain-glasses.jpg" alt="">
+                                                <div class="result" style="height: 57px;">
+                                                    <p class="approved">Approved - eyes fully visible</p>
+                                                </div>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            
+                                            <li>
+                                                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-m2-glasses-reflection.jpg" alt="">
+                                                <div class="result" style="height: 57px;">
+                                                    <p class="failed">No glare on glasses</p>
+                                                </div>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+
                 <nav class="guide-nav">
                     <ul>
                         <li class="button-guide button-guide-previous">
-                            <a href="photo3-lighting">Previous</a>
+                            <a href="photo4-light-and-background">Previous</a>
                         </li>
                         <li class="button-guide button-guide-next">
-                            <a href="photo5-include-shoulders">Next</a>
+                            <a href="../photo8-upload">Next</a>
                         </li>
                     </ul>
                 </nav>
@@ -124,8 +168,7 @@
                     </div>
     </main>
 
-   
-
+    
     <div id="global-app-error" class="app-error hidden"></div>
 
     <script src="/public/govuk-assets/javascripts/govuk-template.js?0.17.3"></script>
@@ -138,11 +181,13 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('set', 'anonymizeIp', true);
     ga('create', 'UA-50679428-3', 'auto');
-    ga('send', 'pageview', '/photo/photo-guide-distance');
+    ga('send', 'pageview', '/photo/photo-guide-headwear');
 </script>
     <script src="/photo/public/javascripts/app.js"></script>
   </body>
 </html>
+
+
 
 {% endblock %}
 

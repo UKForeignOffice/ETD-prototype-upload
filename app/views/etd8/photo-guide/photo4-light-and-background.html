@@ -1,15 +1,10 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  ETD photo guide 6 - Check the space around your head and shoulders
-
+  Photo guide - background and lighting
 {% endblock %}
 
 {% block content %}
-
-
-
-
 
 
 
@@ -19,7 +14,7 @@
 <!--[if gt IE 8]><!--><html lang=""><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>    Check the space around your head and shoulders &ndash; Photo &ndash; GOV.UK
+    <title>    Find a plain background &ndash; Photo &ndash; GOV.UK
 </title>
 
     <!--[if gt IE 8]><!--><link href="/public/govuk-assets/stylesheets/govuk-template.css?0.17.3" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
@@ -77,6 +72,7 @@
 
     
    
+    
 
 
     <div id="global-header-bar"></div>
@@ -89,46 +85,64 @@
             </p>
         </div>
                 <div class="photo-guide">
-          <a href="tasklist9" class="back-link">Back to task list</a>
-            <span class="marker">Guide part 5 of 7</span>
+            <a href="tasklist9" class="back-link">Back to task list</a>
+            <span class="marker">Guide part 4 of 5</span>
         </div>
                 <div class="grid-row">
-            <div class="column-full">
                 <div class="photo-guide">
-                    <div class="flash-card">
-                        <div class="grid-row">
-                            <div class="column-half">
-                                <header>
-                                    <h1>Include your shoulders</h1>
-                                </header>
-                               
-                                
-                                 <p><strong>Don't crop your photo - we'll do it for you.</strong></p>
-                                  <p>Your photo must show your head, shoulders and upper body.
-                                     <p>
-                                      <p>Make sure there is lots of clear space around your head and shoulders. </p>
-                            </div>
-                            <div class="column-half">
-                                <img src="https://www.passport.service.gov.uk/photo/public/images/too-close-photo.png" alt="" aria-hidden="true">
-                            </div>
-                        </div>
-                            <nav class="guide-nav">
+            <div class="column-full">
+    <div class="flash-card">
+        <header>
+    <h1>Get the background and lighting right</h1>
+        </header>
+    <div class="text">
+        
+                                 <p>You need a background without any texture or patterns. A light grey, cream or white wall works best.</p>
+        
+        <p>It's best to use natural daylight. If using a light, you need to stand in the light but not directly under it
+        </p>
+        
+        <p>Make sure there are no shadows on your face or behind you.</p>
+    </div>
+    <div class="guidance-photos" aria-hidden="true">
+        <ul>
+            <li>
+                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-m2-plain.jpg" alt="">
+                <div class="result">
+                    <p class="approved">Approved</p>
+                </div>
+            </li>
+            <li>
+                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-m2-textured-background.jpg" alt="">
+                <div class="result">
+                    <p class="failed">Textured background</p>
+                </div>
+            </li>
+            <li>
+                <img src="http://passports-prototype.herokuapp.com/public/images/photoguide/uncropped-photos/image-m1-flash-shadow.jpg" alt="">
+                <div class="result">
+                    <p class="failed">Shadow behind head</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+                <nav class="guide-nav">
                     <ul>
                         <li class="button-guide button-guide-previous">
-                            <a href="photo4-position">Previous</a>
+                            <a href="photo3-position">Previous</a>
                         </li>
                         <li class="button-guide button-guide-next">
-                            <a href="photo6-face-clear">Next</a>
+                            <a href="photo5-face-eyes">Next</a>
                         </li>
                     </ul>
                 </nav>
-                    </div>
                 </div>
-            </div>
+</div>
+    </div>
                     </div>
     </main>
 
-    
+   
 
     <div id="global-app-error" class="app-error hidden"></div>
 
@@ -142,7 +156,7 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('set', 'anonymizeIp', true);
     ga('create', 'UA-50679428-3', 'auto');
-    ga('send', 'pageview', '/photo/photo-guide-space');
+    ga('send', 'pageview', '/photo/photo-guide-background');
 </script>
     <script src="/photo/public/javascripts/app.js"></script>
   </body>
