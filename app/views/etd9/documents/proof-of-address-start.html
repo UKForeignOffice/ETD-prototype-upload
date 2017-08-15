@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Proof of address
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+<div class="breadcrumbs">
+    <ol>
+        <li><a href="../1start.html">Emergency Travel Document</a></li>
+      <li><a href="../task-list-proof-address/tasklistsummary0.html">Steps</a></li>
+      <li>Proof of address</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/" method="post" class="form">
+
+        <h1 class="heading-xlarge">
+          About your proof of address
+        </h1>
+
+        <p>
+          As your final destination is outside the UK, you'll need to provide proof of your address outside the UK. 
+        </p>
+
+
+       
+
+
+        <div class="form-group">
+          <fieldset>
+
+
+            <label for="radio-part-2" class="block-label">
+              <input id="radio-part-2" type="radio" name="housing-act" value="Part 2">
+              <span class="heading-small">I have digital document (recommended)</span><br>
+              For example you could download a statement from your bank online or access a paperless utility bill.
+            </label>
+
+            <label for="radio-part-3" class="block-label">
+              <input id="radio-part-3" type="radio" name="housing-act" value="Part 3">
+              <span class="heading-small">I only have paper document</span><br>
+              We will show you how to photograph it
+            </label>
+
+          </fieldset>
+        </div>
+</form>
+         <section>
+          <div>
+    <br>
+          <p>
+              <br>
+        <a class="button button-start" href="proof-of-address-type.html" role="button">Next - choose type of proof</a>
+          
+          </div>
+             </section>
+      
+
+    </div>
+  </div>
+</main>
+{% endblock %}
