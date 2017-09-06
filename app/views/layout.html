@@ -11,9 +11,7 @@
 {% block proposition_header %}
 
   <div class="header-proposition">
-   <!-- this is a test-->
     <div class="content">
-      <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
       <nav id="proposition-menu">
         <a href="/" id="proposition-name">
           {# Set serviceName in config.js. Use a block to override on a page. #}
@@ -21,16 +19,10 @@
             {% if serviceName %} {{ serviceName }} {% endif %}
           {% endblock %}
         </a>
-        <!--
-        <ul id="proposition-links">
-          <li><a href="url-to-page-1" class="active">Navigation item #1</a></li>
-          <li><a href="url-to-page-2">Navigation item #2</a></li>
-        </ul>
-        -->
       </nav>
     </div>
   </div>
-
+  
 {% endblock %}
 
 {% block header_class %}
@@ -39,5 +31,6 @@
 
 {% block body_end %}
   {% include "includes/scripts.html" %}
-  <!-- GOV.UK Prototype kit {{releaseVersion}} -->
 {% endblock %}
+
+
