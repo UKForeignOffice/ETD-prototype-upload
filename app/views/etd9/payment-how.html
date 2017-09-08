@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Choose payment method
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/" method="post" class="form">
+
+        <h3 class="heading-large">
+         How do you want to pay?
+        </h3>
+
+
+        <p> An emergency travel document costs £100. Paying online will speed up your application.</p>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Payment</legend>
+
+           <label for="radio-online" class="block-label" data-target="yes">
+              <input id="radio-online" type="radio" name="pay" value="online">
+             
+              Pay online
+            </label>
+
+            <label for="radio-friend" class="block-label" data-target="yes">
+              <input id="radio-friend" type="radio" name="pay" value="online">
+             
+               Ask a friend to pay online
+            </label>
+
+              <label for="radio-cant" class="block-label" data-target="cant">
+              <input id="radio-cant" type="radio" name="pay" value="cant">
+            
+             I can't pay online
+            </label>
+
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="cant">
+              <label class="form-label" for="no">
+              <p>
+                You can pay at the appointment in cash in the local currency equivalent of £100.  You can also pay by card but please note that you cannot take your mobile devices into the consulate. This can cause delays if you need access to text messages from your bank such as OTP (one time payment) codes.  If you can, it's easier to pay online.
+                </p>
+            </div>
+
+          </fieldset>
+          <p>
+        <a class="button button-start" href="task-list/tasklistsummary3.html" role="button">next</a>
+      </p>
+        </div>
+
+
+
+      </form>
+
+    </div>
+  </div>
+</main>
+            
+
+{% endblock %}

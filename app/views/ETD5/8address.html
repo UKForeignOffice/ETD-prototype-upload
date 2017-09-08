@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    
+<br>
+    
+<form>
+    
+  <form action="/docs/tutorials-and-examples" method="post" class="form">
+    
+         <h1 class="form-title heading-large">
+      Your home address
+    </h1>
+
+      <br>
+
+      
+      
+    <!-- Address lookup -->
+    <div class="form-group">
+      <label class="form-label-bold" for="ni-number">
+       Postcode
+      </label>
+      <input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+        <p>
+        <a class="button button-start" href="#" role="button">Find UK address</a>
+      </p>
+    </div>
+      
+      <div>
+       <ul class="list">
+      <li><a href="#">I want to add an address myself</a></li>
+      <li><a href="#">My home address is outside the UK</a></li>
+    
+    </ul>
+      
+      
+      </div>
+        
+      <div class="form-group">
+      
+          <br>
+       
+    </div>
+    
+      
+          <br>
+       
+    <div>
+          <p>
+        <a class="button button-start" href="tasklist3" role="button">next</a>
+      </p>
+        </div>
+
+      
+</main>
+
+{% endblock %}

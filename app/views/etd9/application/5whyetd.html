@@ -1,0 +1,117 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+ Why can you not use your passport?
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/" method="post" class="form">
+
+        <h3 class="heading-large">
+          Why can you not use your passport?
+        </h3>
+
+        
+      <p>Select the closest reason:</p>
+            <label for="radio-lost" class="block-label">
+              <input id="radio-lost" type="radio" name="why" value="lost">
+             
+              My passport has been lost
+            </label>
+
+            <label for="radio-stolen" class="block-label"> 
+              <input id="radio-stolen" type="radio" name="why" value="stolen">
+            
+             My passport has been stolen
+            </label>
+
+
+            <label for="radio-expire" class="block-label">
+              <input id="radio-expire" type="radio" name="why" value="expire">
+             
+              My passport has expired or is about to expire
+            </label>
+
+            <label for="radio-full" class="block-label">
+              <input id="radio-full" type="radio" name="why" value="full">
+            
+             My passport is full
+            </label>
+
+
+            <label for="radio-defaced" class="block-label">
+              <input id="radio-defaced" type="radio" name="why" value="defaced">
+             
+              My passport is damaged or defaced
+            </label>
+
+
+            <label for="radio-HMPO" class="block-label" data-target="HMPO">
+              <input id="radio-HMPO" type="radio" name="why" value="HMPO">
+            
+             My passport is with HM Passport Office or at a foreign embassy
+            </label>
+          
+           <label for="radio-no" class="block-label">
+              <input id="radio-no" type="radio" name="previousname" value="no">
+
+              My passport is unavailable
+            
+             
+            </label>
+         
+        
+      </form>
+
+          <br>
+         
+          <p>If your passport is both lost and expired, select lost.
+          </p>
+        
+        
+        <div>
+            
+            <h2>Do you want to give any other information about what happened to your passport? </h2>
+        
+         <!-- other info large text box -->
+    
+
+   <div data-reactid=".1owqbumt5og.4.1.0.2">
+       <div data-reactid=".1owqbumt5og.4.1.0.2.0"></div>
+       
+       <form form="function (){t.apply(this,arguments)}" method="POST" autocomplete="off" action="" data-reactid=".1owqbumt5og.4.1.0.2.1">
+           
+           <div id="form-group-other-information" class="form-groupdefault otherInfoField" data-reactid=".1owqbumt5og.4.1.0.2.1.0">
+               <span class="form-hint" data-reactid=".1owqbumt5og.4.1.0.2.1.0.0">(optional)</span>
+               
+               <textarea rows="3" cols="200" maxlength="1050" class="form-control" id="otherInformation" name="otherInformation" data-reactid=".1owqbumt5og.4.1.0.2.1.0.1"></textarea>
+               <br data-reactid=".1owqbumt5og.4.1.0.2.1.0.2">
+               
+               
+               <br data-reactid=".1owqbumt5og.4.1.0.2.1.0.3"><div data-reactid=".1owqbumt5og.4.1.0.2.1.0.4">
+               
+             </form></div>
+        
+        </div>
+        
+        
+        
+        <a class="button button-start" href="6travelwhy" role="button">next</a>
+
+
+       
+
+
+
+
+    
+</main>
+            
+
+{% endblock %}

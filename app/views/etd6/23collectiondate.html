@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Collection date
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/" method="post" class="form">
+
+        <h3 class="heading-large">
+          When would you like to collect it?
+        </h3>
+
+
+        <p> Choose a date
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Nearest Consulate?</legend>
+
+                   
+            <label for="radio-amsterdam" class="block-label">
+              <input id="radio-amsterdam" type="radio" name="nearest-consulate" value="amsterdam">
+             
+           Tuesday 17th July 2018
+            </label>
+
+           <label for="radio-amsterdam" class="block-label">
+              <input id="radio-amsterdam" type="radio" name="nearest-consulate" value="amsterdam">
+             
+           Wednesday 18th July 2018
+            </label>
+ <label for="radio-amsterdam" class="block-label">
+              <input id="radio-amsterdam" type="radio" name="nearest-consulate" value="amsterdam">
+             
+           Thursday 19th July 2018
+            </label>
+ <label for="radio-amsterdam" class="block-label">
+              <input id="radio-amsterdam" type="radio" name="nearest-consulate" value="amsterdam">
+             
+           Friday 20th July 2018
+            </label>
+
+            
+            </div>
+
+            <p> </p>
+
+<p>If this is not in time to travel, please complete the application and contact the consulate on 0800 800 8900</p>
+
+            <p> 
+
+          </fieldset>
+          <p>
+        <a class="button button-start" href="tasklist7" role="button">next</a>
+      </p>
+        </div>
+
+
+
+      </form>
+
+    </div>
+  </div>
+</main>
+            
+
+{% endblock %}

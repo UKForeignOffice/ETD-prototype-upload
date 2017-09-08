@@ -1,0 +1,118 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Travel details - when
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+      <h1 class="heading-large">
+        When are you travelling?
+      </h1>
+
+      <p>Your exact journey will be printed in your emergency travel document. If you haven't booked travel yet, enter the date you want to travel.  You can edit the date during your appointment at the consulate.</p>
+        
+        <div>
+        <p>
+    <br/>
+</p>
+</div>
+
+     <h1 class="heading-small">
+        Departure date
+      </h1>
+      <form class="form">
+
+        <fieldset class="form-group">
+          <legend class="visuallyhidden">Date of departure</legend>
+          <div class="form-date">
+
+            <p class="form-hint">For example, 7 3 2016</p>
+
+            <div class="form-group form-group-day">
+              <label for="dob-day">Day</label>
+              <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+            </div>
+
+            <div class="form-group form-group-month">
+              <label for="dob-month">Month</label>
+              <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+            </div>
+
+            <div class="form-group form-group-year">
+              <label for="dob-year">Year</label>
+              <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2017">
+            </div>
+
+          </div>
+            
+            <div>
+        <p>
+    <br/>
+</p>
+</div>
+             </form>
+            <div><br/></div>
+            
+            
+        </fieldset>
+          
+          <p>
+    <br/>
+</p>
+
+
+             <h1 class="heading-small">
+        Arrival date if different from above (optional)
+</h1>
+          
+          
+          
+          
+      <form class="form">
+
+        <fieldset class="form-group">
+          <legend class="visuallyhidden">Date of arrival</legend>
+          <div class="form-date">
+
+            <p class="form-hint">For example, 8 3 2016</p>
+
+            <div class="form-group form-group-day">
+              <label for="dob-day">Day</label>
+              <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+            </div>
+
+            <div class="form-group form-group-month">
+              <label for="dob-month">Month</label>
+              <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+            </div>
+
+            <div class="form-group form-group-year">
+              <label for="dob-year">Year</label>
+              <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+            </div>
+
+   
+            <p><br/></p>
+                
+      
+       <form><p><br/></p></form>
+</fieldset>
+
+          <p>
+        <a class="button button-start" href="13yourdetails" role="button">next</a>
+      </p>
+     
+
+
+      </form>
+
+
+</main>
+
+{% endblock %}

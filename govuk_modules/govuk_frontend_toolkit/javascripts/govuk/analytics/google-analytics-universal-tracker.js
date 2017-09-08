@@ -15,11 +15,6 @@
       sendToGa('set', 'anonymizeIp', true)
     }
 
-    function disableAdTracking () {
-      // https://support.google.com/analytics/answer/2444872?hl=en
-      sendToGa('set', 'displayFeaturesTask', null)
-    }
-
     // Support legacy cookieDomain param
     if (typeof fieldsObject === 'string') {
       fieldsObject = { cookieDomain: fieldsObject }
@@ -27,7 +22,6 @@
 
     configureProfile()
     anonymizeIp()
-    disableAdTracking()
   }
 
   GoogleAnalyticsUniversalTracker.load = function () {
@@ -78,7 +72,11 @@
     // Label is optional
     if (typeof options.label === 'string') {
       evt.eventLabel = options.label
-      delete options.label
+    }
+
+    // Page is optional
+    if (typeof options.page === 'string') {
+      evt.page = options.page
     }
 
     // Value is optional, but when used must be an
@@ -87,19 +85,21 @@
     if (options.value || options.value === 0) {
       value = parseInt(options.value, 10)
       if (typeof value === 'number' && !isNaN(value)) {
-        options.eventValue = value
+        evt.eventValue = value
       }
-      delete options.value
     }
 
     // Prevents an event from affecting bounce rate
     // https://developers.google.com/analytics/devguides/collection/analyticsjs/events#implementation
     if (options.nonInteraction) {
-      options.nonInteraction = 1
+      evt.nonInteraction = 1
     }
 
-    if (typeof options === 'object') {
-      $.extend(evt, options)
+    // Set the transport method for the event
+    // Typically used for enabling `navigator.sendBeacon` when the page might be unloading
+    // https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#transport
+    if (options.transport) {
+      evt.transport = options.transport
     }
 
     sendToGa('send', evt)
@@ -112,17 +112,13 @@
     target – Specifies the target of a social interaction.
              This value is typically a URL but can be any text.
   */
-  GoogleAnalyticsUniversalTracker.prototype.trackSocial = function (network, action, target, options) {
-    var trackingOptions = {
+  GoogleAnalyticsUniversalTracker.prototype.trackSocial = function (network, action, target) {
+    sendToGa('send', {
       'hitType': 'social',
       'socialNetwork': network,
       'socialAction': action,
       'socialTarget': target
-    }
-
-    $.extend(trackingOptions, options)
-
-    sendToGa('send', trackingOptions)
+    })
   }
 
   /*
@@ -145,7 +141,6 @@
     sendToGa(name + '.linker:autoLink', [domain])
 
     sendToGa(name + '.set', 'anonymizeIp', true)
-    sendToGa(name + '.set', 'displayFeaturesTask', null)
     sendToGa(name + '.send', 'pageview')
   }
 

@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Travel details - when
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+      <h1 class="heading-large">
+       Why do you need to travel?
+      </h1>
+
+     
+
+    
+      
+        <div class="form-group">
+       <fieldset>
+
+            <legend class="visuallyhidden">Why do you need to travel?</legend>
+<label for="radio-home" class="block-label">
+              <input id="radio-home" type="radio" name="whytravel" value="home">
+             
+              To return home
+            </label>
+
+            <label for="radio-business" class="block-label">
+              <input id="radio-business" type="radio" name="whytravel" value="business">
+            
+             For business purposes
+            </label>
+
+
+            <label for="radio-holiday" class="block-label">
+              <input id="radio-holiday" type="radio" name="whytravel" value="holiday">
+             
+              Going on holiday
+            </label>
+
+            <label for="radio-friends" class="block-label">
+              <input id="radio-friends" type="radio" name="whytravel" value="friends">
+            
+             To visit friends or family
+            </label>
+
+
+            <label for="radio-new" class="block-label">
+              <input id="radio-new" type="radio" name="whytravel" value="new">
+             
+              To apply for a new passport
+            </label>
+
+            <label for="radio-compassion" class="block-label">
+              <input id="radio-compassion" type="radio" name="whytravel" value="compassion">
+            
+             Compassionate reasons
+            </label>
+
+
+            <label for="radio-other" class="block-label" data-target="other">
+              <input id="radio-other" type="radio" name="whytravel" value="other">
+            
+             Other
+            </label>
+          
+
+            <div class="panel panel-border-narrow js-hidden" id="other">
+              <label class="form-label" for="other">
+                If other, tell us the reason
+              </label>
+              <input class="form-control" type="text" id="other">
+          </div> 
+
+</div>
+</fieldset>
+
+          <p>
+        <a class="button button-start" href="7travelbooked" role="button">next</a>
+      </p>
+     
+
+
+      </form>
+
+
+</main>
+
+{% endblock %}
