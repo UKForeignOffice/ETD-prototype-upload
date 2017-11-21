@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block page_title %}
+FCO ETD Online Prototype
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+	{% include "includes/phase_banner_alpha.html" %}
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			
+			<h1 class="heading-large">
+				Where are you travelling to?
+	  	  	</h1>
+	  	  	<hr>
+			<div class="form-group">
+			  <fieldset>
+			  
+				<legend class="visually-hidden">Where are you travelling to?</legend>
+				  <p>Your exact journey will be printed in your emergency travel document. You can use an emergency travel document to travel to your final destination via up to 5 countries.</p>
+				  	<select name="cat" id="cat" class="postform">
+						<option value="-1">Select Category</option>
+						<option class="level-0" value="74">Design&nbsp;&nbsp;(31)</option>
+						<option class="level-0" value="12">Experimental&nbsp;&nbsp;(22)</option>
+						<option class="level-0" value="82">Frontend&nbsp;&nbsp;(6)</option>
+						<option class="level-0" value="72">Journey Maps&nbsp;&nbsp;(1)</option>
+						<option class="level-0" value="14">Likely to change&nbsp;&nbsp;(22)</option>
+						<option class="level-0" value="73">Service Design&nbsp;&nbsp;(12)</option>
+						<option class="level-0" value="69">Service Patterns&nbsp;&nbsp;(4)</option>
+						<option class="level-0" value="13">Tried &amp; tested&nbsp;&nbsp;(26)</option>
+						<option class="level-0" value="1">Uncategorized&nbsp;&nbsp;(9)</option>
+						<option class="level-0" value="71">User Research&nbsp;&nbsp;(1)</option>
+					</select>
+  			  </fieldset>
+       		</div>
+						
+			<div class="clear-both"><hr><p><a class="button" href="xxx.html" role="button">Next</a></p></div>
+			
+		</div>	  	  	
+	  
+	</div>
+</main>
+{% endblock %}
